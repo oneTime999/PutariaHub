@@ -621,9 +621,9 @@
         <h3 class="profile-name">Pedro, 15</h3>
         <p class="profile-distance">0.5km • Online agora 🟢</p>
         <div class="profile-tags">
-          <span class="tag">aaaaaaaaa</span>
-          <span class="tag">aaaaaaaaa</span>
-          <span class="tag">aaaaaaaaa</span>
+          <span class="tag">Jogador</span>
+          <span class="tag">Transudo</span>
+          <span class="tag">Gamer</span>
         </div>
         <button class="connect-btn">💬 Chamar</button>
             </div>
@@ -676,27 +676,7 @@
   </section>
 
   <script>
-    // Custom Cursor (optimized)
-    const cursor = document.querySelector('.cursor');
-    const cursorFollower = document.querySelector('.cursor-follower');
-    let mouseX = 0, mouseY = 0;
-    let followerX = 0, followerY = 0;
-    let cursorTicking = false;
-
-    document.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      
-      if (!cursorTicking) {
-        requestAnimationFrame(() => {
-          cursor.style.left = mouseX + 'px';
-          cursor.style.top = mouseY + 'px';
-          cursorTicking = false;
-        });
-        cursorTicking = true;
-      }
-    });
-
+    
     function animateFollower() {
       followerX += (mouseX - followerX) * 0.08; // Slightly smoother
       followerY += (mouseY - followerY) * 0.08;
